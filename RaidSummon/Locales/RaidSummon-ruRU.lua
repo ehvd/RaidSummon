@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "Russian"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r версия ' .. X .. ' по ' .. Y .. ' загрузка'
 end
 L["AddonDisabled"] = "RaidSummon отключен"
@@ -60,16 +60,16 @@ L["NotEnoughMana"] = "|cff9482c9RaidSummon:|r недостаточно маны"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return 'RaidSummon: Призыв ' .. T .. ' в ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return 'RaidSummon: Призываю вас ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return 'RaidSummon: Призыв ' .. T .. ' в ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return 'RaidSummon: Призываю вас ' .. Z
 end
 L["SummonAnnounceR"] = function(T)

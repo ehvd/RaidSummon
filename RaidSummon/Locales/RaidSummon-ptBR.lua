@@ -5,20 +5,20 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "Português Brasileiro"
-L["AddonEnabled"] = function(X,Y)
-    return '|cff9482c9RaidSummon:|r versão ' .. X .. ' por ' .. Y .. ' carregado'
+L["AddonEnabled"] = function(X, Y)
+	return '|cff9482c9RaidSummon:|r versão ' .. X .. ' por ' .. Y .. ' carregado'
 end
 L["AddonDisabled"] = "RaidSummon desabilitado"
 L["FrameHeader"] = function(X)
-    return 'RaidSummon v' .. X
+	return 'RaidSummon v' .. X
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r Você está em combate, ação interrompida"
 L["noRaid"] = "|cff9482c9RaidSummon:|r Nenhuma raid encontrada."
-L["MemberRemoved"] = function(X,Y)
-    return '|cff9482c9RaidSummon:|r Removendo jogador ' .. X .. ' do quadro de invocação, conforme solicitado por ' .. Y
+L["MemberRemoved"] = function(X, Y)
+	return '|cff9482c9RaidSummon:|r Removendo jogador ' .. X .. ' do quadro de invocação, conforme solicitado por ' .. Y
 end
-L["MemberAdded"] = function(X,Y)
-    return '|cff9482c9RaidSummon:|r Adicionando jogador ' .. X .. ' ao quadro de invocação, conforme solicitado por ' .. Y
+L["MemberAdded"] = function(X, Y)
+	return '|cff9482c9RaidSummon:|r Adicionando jogador ' .. X .. ' ao quadro de invocação, conforme solicitado por ' .. Y
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r Adicionando todos os jogadores"
 
@@ -53,7 +53,7 @@ L["OptionKWAddName"] = "Add palavra-chave"
 L["OptionKWAddDesc"] = "Adiciona uma palavra-chave de invocação."
 L["OptionKWRemoveName"] = "Remover palavra-chave"
 L["OptionKWRemoveDesc"] = "Remove uma palavra-chave de invocação."
-L["OptionKWDescription"] =  [[|cffff0000Palavras-chave são expressões regulares, use com cuidado!|r
+L["OptionKWDescription"] = [[|cffff0000Palavras-chave são expressões regulares, use com cuidado!|r
 
 As palavras-chave são correspondidas por meio do bate-papo say/yell/raid/party/whisper. Somente o remetente da mensagem de bate-papo será adicionado à lista de convocação. Para redefinir palavras-chave, você pode usar o gerenciador de perfis do Ace3 e redefinir seu perfil.
 
@@ -92,37 +92,37 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r Limpou a lista de invocação"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
-    return 'RaidSummon: Invocando ' .. T .. ' para ' .. Z .. ' - ' .. S
+L["SummonAnnounceRZS"] = function(T, Z, S)
+	return 'RaidSummon: Invocando ' .. T .. ' para ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
-    return 'RaidSummon: Invocando você para ' .. Z .. ' - ' .. S
+L["SummonAnnounceWZS"] = function(Z, S)
+	return 'RaidSummon: Invocando você para ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
-    return 'RaidSummon: Invocando ' .. T .. ' para ' .. Z
+L["SummonAnnounceRZ"] = function(T, Z, S)
+	return 'RaidSummon: Invocando ' .. T .. ' para ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
-    return 'RaidSummon: Invocando você para ' .. Z
+L["SummonAnnounceWZ"] = function(Z, S)
+	return 'RaidSummon: Invocando você para ' .. Z
 end
 L["SummonAnnounceR"] = function(T)
-    return 'RaidSummon: Invocando ' .. T
+	return 'RaidSummon: Invocando ' .. T
 end
 L["SummonAnnounceW"] = "RaidSummon: Invocando você"
 L["SummonAnnounceError"] = "|cff9482c9RaidSummon:|r Anunciar erro"
 L["NotEnoughMana"] = "|cff9482c9RaidSummon:|r Não é suficiente Mana!"
-L["TargetMissmatch"] = function(X,Y)
-    return '|cff9482c9RaidSummon:|r Invocação cancelada. Seu alvo ' .. X .. ' não corresponde ao nome em que você clicou ' .. Y
+L["TargetMissmatch"] = function(X, Y)
+	return '|cff9482c9RaidSummon:|r Invocação cancelada. Seu alvo ' .. X .. ' não corresponde ao nome em que você clicou ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r Invocando lista de palavras-chave:"
 L["OptionKWAddDuplicate"] = function(V)
-    return '|cff9482c9RaidSummon:|r Keyword duplicado: ' .. V
+	return '|cff9482c9RaidSummon:|r Keyword duplicado: ' .. V
 end
 L["OptionKWAddAdded"] = function(V)
-    return '|cff9482c9RaidSummon:|r Keyword adicionado: ' .. V
+	return '|cff9482c9RaidSummon:|r Keyword adicionado: ' .. V
 end
 L["OptionKWRemoveRemoved"] = function(V)
-    return '|cff9482c9RaidSummon:|r Keyword removido: ' .. V
+	return '|cff9482c9RaidSummon:|r Keyword removido: ' .. V
 end
 L["OptionKWRemoveNF"] = function(V)
-    return '|cff9482c9RaidSummon:|r Palavra-chave não encontrada: ' .. V
+	return '|cff9482c9RaidSummon:|r Palavra-chave não encontrada: ' .. V
 end

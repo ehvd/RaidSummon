@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "Deutsch"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Version ' .. X .. ' von ' .. Y .. ' geladen'
 end
 L["AddonDisabled"] = "RaidSummon deaktiviert"
@@ -14,10 +14,10 @@ L["FrameHeader"] = function(X)
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r Du befindest dich im Kampf, Aktion abgebrochen"
 L["noRaid"] = "|cff9482c9RaidSummon:|r Keine Schlachtzuggruppe gefunden."
-L["MemberRemoved"] = function(X,Y)
+L["MemberRemoved"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Entferne Schlachtzugsmitglieder ' .. X .. ' von der Beschörungsliste, wie von ' .. Y .. ' angefordert'
 end
-L["MemberAdded"] = function(X,Y)
+L["MemberAdded"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Füge Schlachtzugsmitglieder ' .. X .. ' zu der Beschörungsliste hinzu, wie von ' .. Y .. ' angefordert'
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r Füge alle Schlachtzugsmitglieder hinzu"
@@ -57,7 +57,7 @@ L["OptionKWAddName"] = "Schlüsselwort hinzufügen"
 L["OptionKWAddDesc"] = "Fügt ein Schlüsselwort zur Liste hinzu."
 L["OptionKWRemoveName"] = "Schlüsselwort entfernen"
 L["OptionKWRemoveDesc"] = "Entfernt ein Schlüsselwort aus der Liste."
-L["OptionKWDescription"] =  [[|cffff0000ACHTUNG: Schlüsselwörter sind Reguläre Ausdrücke!|r
+L["OptionKWDescription"] = [[|cffff0000ACHTUNG: Schlüsselwörter sind Reguläre Ausdrücke!|r
 
 Schlüsselwörter werden in den Kanälen sprechen/rufen/Schlachtzug/Gruppe/flüstern erkannt. Nur der Absender der Nachricht wird zur Beschörungsliste hinzugefügt. Die Schlüsselwörter können über den Ace3 Profilmanager zurückgesetzt werden.
 
@@ -101,16 +101,16 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r Beschörungsliste gelöscht"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return 'RaidSummon: Beschwöre ' .. T .. ' nach ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return 'RaidSummon: Beschwöre dich nach ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return 'RaidSummon: Beschwöre ' .. T .. ' nach ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return 'RaidSummon: Beschwöre dich nach ' .. Z
 end
 L["SummonAnnounceR"] = function(T)
@@ -118,7 +118,7 @@ L["SummonAnnounceR"] = function(T)
 end
 L["SummonAnnounceW"] = "RaidSummon: Beschwöre dich"
 L["NotEnoughMana"] = "|cff9482c9RaidSummon:|r Nicht genug Mana!"
-L["TargetMissmatch"] = function(X,Y)
+L["TargetMissmatch"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Beschwören abgebrochen. Dein Target ' .. X .. ' stimmt nicht mit dem Namen überein, der angeklickt wurde ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r Schlüsselwort-Liste:"

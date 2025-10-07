@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "简体中文"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r version ' .. X .. ' by ' .. Y .. ' loaded'
 end
 L["AddonDisabled"] = "禁用RaidSummon"
@@ -14,10 +14,10 @@ L["FrameHeader"] = function(X)
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r 进入战斗，动作取消。"
 L["noRaid"] = "|cff9482c9RaidSummon:|r 不在团队中"
-L["MemberRemoved"] = function(X,Y)
+L["MemberRemoved"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Removing player ' .. X .. ' from the summoning frame as requested by ' .. Y
 end
-L["MemberAdded"] = function(X,Y)
+L["MemberAdded"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Adding player ' .. X .. ' to the summoning frame as requested by ' .. Y
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r 添加所有玩家"
@@ -55,7 +55,7 @@ L["OptionKWAddName"] = "添加关键字"
 L["OptionKWAddDesc"] = "添加一个召唤请求关键字。"
 L["OptionKWRemoveName"] = "移除关键字"
 L["OptionKWRemoveDesc"] = "移除一个召唤请求关键字。"
-L["OptionKWDescription"] =  [[|cffff0000请注意关键字匹配说明！|r
+L["OptionKWDescription"] = [[|cffff0000请注意关键字匹配说明！|r
 
 插件将搜寻匹配“说/大喊/团队/小队/密语”这些聊天中的关键字。仅当消息中包含有关键字的发送人会被添加到召唤列表。如果需要重置关键字列表，你可以使用Ace3配置管理器重置你的配置文件。
 
@@ -96,16 +96,16 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r 召唤列表已清空"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return 'RaidSummon: 正在召唤 ' .. T .. ' 到 ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return 'RaidSummon: 正将你召唤到 ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return 'RaidSummon: 正在召唤 ' .. T .. ' 到 ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return 'RaidSummon: 正将你召唤到 ' .. Z
 end
 L["SummonAnnounceR"] = function(T)
@@ -113,7 +113,7 @@ L["SummonAnnounceR"] = function(T)
 end
 L["SummonAnnounceW"] = "RaidSummon: 正在召唤你"
 L["SummonAnnounceError"] = "|cff9482c9RaidSummon:|r 召唤通知错误"
-L["TargetMissmatch"] = function(X,Y)
+L["TargetMissmatch"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r 召唤已取消。当前目标 ' .. X .. ' 与你在列表中点击的目标不匹配 ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r 关键字列表："

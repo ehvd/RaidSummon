@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "French"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r version ' .. X .. ' by ' .. Y .. ' chargé'
 end
 L["AddonDisabled"] = "RaidSummon désactivé"
@@ -14,10 +14,10 @@ L["FrameHeader"] = function(X)
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r Vous êtes en combat, action abandonnée"
 L["noRaid"] = "|cff9482c9RaidSummon:|r Aucun raid trouvé, vous n'êtes pas en Raid"
-L["MemberRemoved"] = function(X,Y)
+L["MemberRemoved"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Suppression du joueur' .. X .. ' de la liste des invocations , comme demandé par ' .. Y
 end
-L["MemberAdded"] = function(X,Y)
+L["MemberAdded"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Adding player ' .. X .. ' de la liste des invocations par ' .. Y
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r Ajout de tous les joueurs"
@@ -53,7 +53,7 @@ L["OptionKWAddName"] = "Ajout Mot clé"
 L["OptionKWAddDesc"] = "Ajoute un mot-clé pour les invocations. "
 L["OptionKWRemoveName"] = "Enlève un mot clés"
 L["OptionKWRemoveDesc"] = "Supprime un mot clé d'invocation."
-L["OptionKWDescription"] =  [[|cffff0000Les mots clés sont des expressions régulières, à utiliser avec précaution!|r
+L["OptionKWDescription"] = [[|cffff0000Les mots clés sont des expressions régulières, à utiliser avec précaution!|r
 Les mots clés sont mis en correspondance via le chat say / yell / raid / party / whisper. Seul l'expéditeur du message de discussion sera ajouté à la liste d'invocation. Pour réinitialiser les mots clés, vous pouvez utiliser le gestionnaire de profils Ace3 et réinitialiser votre profil.
 Basic examples:
 |cff9482c9^tp|r - Will match "summon" as the first word of a chat message
@@ -90,16 +90,16 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r Effacé la liste d'invocation"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return 'RaidSummon: Invocation ' .. T .. ' à ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return 'RaidSummon: Invocation à ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return 'RaidSummon: Invocation ' .. T .. ' à ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return 'RaidSummon: Invocation en cours à ' .. Z
 end
 L["SummonAnnounceR"] = function(T)
@@ -108,7 +108,7 @@ end
 L["SummonAnnounceW"] = "RaidSummon: Invocation en cours"
 L["SummonAnnounceError"] = "|cff9482c9RaidSummon:|r Announce error"
 L["NotEnoughMana"] = "|cff9482c9RaidSummon:|r Pas assez de Mana!"
-L["TargetMissmatch"] = function(X,Y)
+L["TargetMissmatch"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Invocation Annulée. Votre cible ' .. X .. ' ne correspond pas au nom sur lequel vous avez cliqué ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r Invocation Mots clés liste:"

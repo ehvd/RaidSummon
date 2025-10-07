@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "English"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r version ' .. X .. ' by ' .. Y .. ' loaded'
 end
 L["AddonDisabled"] = "RaidSummon disabled"
@@ -14,10 +14,10 @@ L["FrameHeader"] = function(X)
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r You are in combat, action aborted"
 L["noRaid"] = "|cff9482c9RaidSummon:|r No raid found."
-L["MemberRemoved"] = function(X,Y)
+L["MemberRemoved"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Removing player ' .. X .. ' from the summoning frame as requested by ' .. Y
 end
-L["MemberAdded"] = function(X,Y)
+L["MemberAdded"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Adding player ' .. X .. ' to the summoning frame as requested by ' .. Y
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r Adding all players"
@@ -59,7 +59,7 @@ L["OptionKWAddName"] = "Add keyword"
 L["OptionKWAddDesc"] = "Adds a summoning keyword."
 L["OptionKWRemoveName"] = "Remove keyword"
 L["OptionKWRemoveDesc"] = "Removes a summoning keyword."
-L["OptionKWDescription"] =  [[|cffff0000Keywords are regular expressions, use carefully!|r
+L["OptionKWDescription"] = [[|cffff0000Keywords are regular expressions, use carefully!|r
 
 Keywords are matched via say/yell/raid/party/whisper chat. Only the sender of the chat message will be added to the summoning list. To reset keywords you can use the Ace3 profile manager and reset your profile.
 
@@ -105,16 +105,16 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r Cleared the summon list"
 
 --Summon Announce
 --W=Whisper/R=Raid Z=Zone S=Subzone T=Target Player
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return 'RaidSummon: Summoning ' .. T .. ' to ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return 'RaidSummon: Summoning you to ' .. Z .. ' - ' .. S
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return 'RaidSummon: Summoning ' .. T .. ' to ' .. Z
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return 'RaidSummon: Summoning you to ' .. Z
 end
 L["SummonAnnounceR"] = function(T)
@@ -122,7 +122,7 @@ L["SummonAnnounceR"] = function(T)
 end
 L["SummonAnnounceW"] = "RaidSummon: Summoning you"
 L["NotEnoughMana"] = "|cff9482c9RaidSummon:|r Not enough mana!"
-L["TargetMissmatch"] = function(X,Y)
+L["TargetMissmatch"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Summoning aborted. Your target ' .. X .. ' does not match the name you clicked ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r Summoning keyword list:"

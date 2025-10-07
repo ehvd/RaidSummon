@@ -5,7 +5,7 @@ if not L then return end
 L["RaidSummon"] = "RaidSummon"
 L["RaidSummonTitle"] = "|cff9482c9RaidSummon|r"
 L["Language"] = "Español"
-L["AddonEnabled"] = function(X,Y)
+L["AddonEnabled"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r versión ' .. X .. ' por ' .. Y .. ' cargado. Traducido por |cffADFF2FThorien-Mandokir|r.'
 end
 L["AddonDisabled"] = "RaidSummon desactivado"
@@ -14,10 +14,10 @@ L["FrameHeader"] = function(X)
 end
 L["Lockdown"] = "|cff9482c9RaidSummon:|r Estás en combate, acción abortada."
 L["noRaid"] = "|cff9482c9RaidSummon:|r Raid no encontrada."
-L["MemberRemoved"] = function(X,Y)
+L["MemberRemoved"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Eliminando jugador ' .. X .. ' de la lista de invocaciones. Solicitado por ' .. Y
 end
-L["MemberAdded"] = function(X,Y)
+L["MemberAdded"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Añadiendo jugador ' .. X .. ' a la lista de invocaciones. Solicitado por ' .. Y
 end
 L["AddAllMessage"] = "|cff9482c9RaidSummon:|r Añadiendo todos los jugadores"
@@ -55,7 +55,7 @@ L["OptionKWAddName"] = "Añadir palabra clave"
 L["OptionKWAddDesc"] = "Añade una palabra clave para invocaciones."
 L["OptionKWRemoveName"] = "Eliminar palabra clave"
 L["OptionKWRemoveDesc"] = "Elimina una palabra clave de la lista de invocaciones."
-L["OptionKWDescription"] =  [[|cffff0000Las palabras clave son expresiones comunes ¡Úsalas con cautela!|r
+L["OptionKWDescription"] = [[|cffff0000Las palabras clave son expresiones comunes ¡Úsalas con cautela!|r
 
 Las palabras clave se detectarán por los chats decir/gritar/banda/grupo/susurro. Para reiniciar una palabra clave puedes usar el gestor de perfiles de Ace3 y reiniciar tu perfil.
 
@@ -96,16 +96,16 @@ L["OptionClear"] = "|cff9482c9RaidSummon:|r Lista de invocación limpiada"
 
 --Anuncio de invocación
 --W=Susurro/R=Banda Z=Zona S=Subzona T=Jugador Objetivo
-L["SummonAnnounceRZS"] = function(T,Z,S)
+L["SummonAnnounceRZS"] = function(T, Z, S)
 	return '{rt3}Invocando a ' .. T .. ' hacia ' .. Z .. ' - ' .. S .. '{rt3}'
 end
-L["SummonAnnounceWZS"] = function(Z,S)
+L["SummonAnnounceWZS"] = function(Z, S)
 	return '{rt3}Invocándote hacia ' .. Z .. ' - ' .. S .. '{rt3}'
 end
-L["SummonAnnounceRZ"] = function(T,Z,S)
+L["SummonAnnounceRZ"] = function(T, Z, S)
 	return '{rt3}Invocando a ' .. T .. ' hacia ' .. Z .. '{rt3}'
 end
-L["SummonAnnounceWZ"] = function(Z,S)
+L["SummonAnnounceWZ"] = function(Z, S)
 	return '{rt3}Invocándote hacia ' .. Z .. '{rt3}'
 end
 L["SummonAnnounceR"] = function(T)
@@ -113,7 +113,7 @@ L["SummonAnnounceR"] = function(T)
 end
 L["SummonAnnounceW"] = "{rt3}Comenzando invocación{rt3}"
 L["SummonAnnounceError"] = "|cff9482c9RaidSummon:|r Se ha interrumpido"
-L["TargetMissmatch"] = function(X,Y)
+L["TargetMissmatch"] = function(X, Y)
 	return '|cff9482c9RaidSummon:|r Invocación abortada. Tu objetivo ' .. X .. ' no coincide con el nombre que has pinchado ' .. Y
 end
 L["OptionKWList"] = "|cff9482c9RaidSummon:|r Lista de palabras clave para invocaciones:"
